@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './Componants/Home/Home';
 import NoMatch from './Componants/NoMatch/NoMatch';
+import FriendDetail from './Componants/FriendDetail/FriendDetail';
 
 
 function App() {
@@ -17,6 +18,13 @@ function App() {
       <Switch>
         <Route path='/home'>
             <Home></Home>
+        </Route>
+        <Route path='/friend/:friendId'>
+            {/* akhane dynamicaly data pache {prothom ongsota friend path e jabe and 2nd ongso dynamicaly change hobe tay avabe lakha hoyece (:friendId) friendId akta variable ata deya amra dynamic id detact korci} */}
+
+           <FriendDetail></FriendDetail>
+           
+           {/* dynamicaly click korle akhane jabe mane ay path a jabe ,akhn akhane amra oy id er information dakhabo tar jonno react router er (url parameters) ar (useParams) use korbo */}
         </Route>
         <Route exact path='/'>
              <Home />

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Friends from '../Freinds/Friends';
+import Friends from '../Friends/Friends';
 
 
 const Home = () => {

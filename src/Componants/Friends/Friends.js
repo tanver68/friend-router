@@ -14,8 +14,8 @@ const Friends = (props) => {
         <div style={friendsStyle}>
             <h2>{name}</h2>
             <p>{email}</p>
-            <button>onclickd</button>
-           <p>id: <Link to={`/about/${id}`}>Show details {id}</Link></p>
+           <p><Link to={`/friend/${id}`//ay route ta dynamically dakhanor jonno ayvabe dclear kora hoyece ,akhane protek id dynamic dakhache and dynamic p[ath e ashtace]
+            }><button>Show details of {id}</button></Link></p> 
         </div>
     );
 };
